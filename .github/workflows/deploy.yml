@@ -1,16 +1,13 @@
-<<<<<<< HEAD
-ECHO est� activado.
-=======
 name: Deploy Carrito Project
 
 on:
   push:
     branches:
-      - main  # Esto se ejecutará cuando se realice un "push" a la rama principal
+      - main  # Este flujo de trabajo se ejecutará cuando se haga push a la rama principal.
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Este trabajo se ejecutará en un entorno de Ubuntu.
 
     steps:
       # Paso 1: Hacer checkout del código
@@ -21,17 +18,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Usa la versión de Node.js que prefieras
+          node-version: '16'  # Cambia la versión de Node.js si es necesario
 
       # Paso 3: Instalar dependencias
       - name: Install dependencies
-        run: npm install  # Instala las dependencias de tu proyecto
+        run: npm install  # Instala las dependencias del proyecto.
 
-      # Paso 4: Ejecutar pruebas (Si tienes pruebas configuradas en tu proyecto)
+      # Paso 4: Ejecutar pruebas
       - name: Run tests
-        run: npm test  # Ejecuta las pruebas definidas en tu proyecto
+        run: npm test  # Ejecuta las pruebas configuradas en el proyecto.
 
-      # Paso 5: Desplegar el proyecto (puedes personalizar este paso según tus necesidades)
+      # Paso 5: Desplegar el proyecto
       - name: Deploy Project
-        run: echo "Desplegando proyecto Carrito..."  # Reemplaza este paso con el comando real de despliegue
->>>>>>> 5fcb1bb9a1b3fa8d1a5a29adda0a36c32d30e47c
+        run: echo "Desplegando el proyecto Carrito..."  # Este paso puede cambiar según tu configuración.
