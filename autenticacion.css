@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para el body */
+body {
+    background-color: #e0e5ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo para el header */
+header {
+    background: url(img/header.jpg) no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la sección */
+section {
+    max-width: 400px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Título del formulario */
+section h1 {
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Estilos para los enlaces */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los formularios */
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: #f0f4f8;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+    }
+}
